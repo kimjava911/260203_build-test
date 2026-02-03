@@ -10,6 +10,9 @@ on:
 # 워크플로우는 'build-and-push'라는 하나의 잡(job)으로 구성됩니다.
 jobs:
   build-and-push:
+    permissions:
+      contents: read
+      packages: write
     # 이 잡을 실행할 가상 머신의 종류를 지정합니다.
     runs-on: ubuntu-latest
 
